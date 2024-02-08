@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MonoSDF: Exploring Monocular Geometric Cues for Neural Implicit Surface Reconstruction">
-  <meta name="keywords" content="MonoSDF, Neural Implicit Surface Reconstruction, Monocular Geometric Cues ">
+        content="H2O-SDF: Two-phase Learning for 3D Indoor Reconstruction using Object Surface Fields">
+  <!-- <meta name="keywords" content="MonoSDF, Neural Implicit Surface Reconstruction, Monocular Geometric Cues "> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MonoSDF</title>
 
@@ -62,25 +62,29 @@
           
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://niujinshuchong.github.io/">Zehao Yu</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="">Minyoung Park</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-              <a href="https://pengsongyou.github.io/">Songyou Peng</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="">Mirae Do</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-              <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a><sup>1,3</sup>
+              <a href="">Yeon Jae Shin</a><sup>2</sup>
             </span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-              <a href="https://tsattler.github.io/">Torsten Sattler</a><sup>4</sup>
+              <a href="">Jaeseok Yoo</a><sup>2</sup>
             </span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-              <a href="http://www.cvlibs.net/">Andreas Geiger</a><sup>1,3</sup>
+              <a href="">Jongkwang Hong</a><sup>2</sup>
+            <span class="author-block">
+                <a href="">Joongrock Kim</a><sup>2</sup>
+              </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+                <a href="">Chul Lee</a><sup>1</sup>
+              </span>&nbsp;&nbsp;&nbsp;&nbsp;
+
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Tübingen</span>&nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="author-block"><sup>2</sup>ETH Zurich</span>&nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="author-block"><sup>3</sup>MPI for Intelligent Systems, Tübingen</span>
-            <span class="author-block"><sup>4</sup>Czech Technical University in Prague</span>
+            <span class="author-block"><sup>1</sup>LG electronics</span>&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
 
           <div class="column has-text-centered">
@@ -120,7 +124,7 @@
               -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/autonomousvision/monosdf"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark disabled">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -129,7 +133,7 @@
                   </a>
               </span>
 
-              <!-- Code Link. -->
+              <!-- Code Link.
               <span class="link-block">
                 <a href="https://github.com/autonomousvision/sdfstudio"
                    class="external-link button is-normal is-rounded is-dark disabled">
@@ -138,7 +142,7 @@
                   </span>
                   <span>SDFStudio</span>
                   </a>
-              </span>
+              </span> -->
 
               <!-- Dataset Link. -->
               <!--
@@ -206,15 +210,9 @@
         <h2 class="title is-3" style="margin-top: -30px">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In recent years, neural implicit surface reconstruction methods have become popular for multi-view 3D reconstruction.
-            In contrast to traditional multi-view stereo methods, these approaches tend to produce smoother and more complete reconstructions due to the inductive smoothness bias of neural networks.
-            State-of-the-art neural implicit methods allow for high-quality reconstructions of simple scenes from many input views. 
-            Yet, their performance drops significantly for larger and more complex scenes and scenes captured from sparse viewpoints.
-            This is caused primarily by the inherent ambiguity in the RGB reconstruction loss that does not provide enough constraints, in particular in less-observed and textureless areas. 
-            Motivated by recent advances in the area of monocular geometry prediction, we systematically explore the utility these cues provide for improving neural implicit surface reconstruction. 
-            We demonstrate that depth and normal cues, predicted by general-purpose monocular estimators, significantly improve reconstruction quality and optimization time.
-            Further, we analyse and investigate multiple design choices for representing neural implicit surfaces, ranging from monolithic MLP models over single-grid to multi-resolution grid representations.
-            We observe that geometric monocular priors improve performance both for small-scale single-object as well as large-scale multi-object scenes, independent of the choice of representation.  
+            Advanced techniques using Neural Radiance Fields (NeRF), Signed Distance Fields (SDF), and Occupancy Fields have recently emerged as solutions for 3D indoor scene reconstruction. We introduce a novel two-phase learning approach, H2O-SDF, that discriminates between object and non-object regions within indoor environments. 
+            This method achieves a nuanced balance, carefully preserving the geometric integrity of room layouts while also capturing intricate surface details of specific objects. 
+            A cornerstone of our two-phase learning framework is the introduction of the Object Surface Field (OSF), a novel concept designed to mitigate the persistent vanishing gradient problem that has previously hindered the capture of high-frequency details in other methods. Our proposed approach is validated through several experiments that include ablation studies.
           </p>
         </div>
       </div>
