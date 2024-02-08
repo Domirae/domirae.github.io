@@ -93,7 +93,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2206.00665.pdf"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -243,9 +243,6 @@
         <img src="./resources/method2.svg" class="center">
         <div class="content has-text-justified">
           <p style="margin-top: 30px">
-            We use monocular geometric cues predicted by a general-purpose pretrained network to guide the optimization of neural implicit surface models. 
-            More specifically, for a batch of rays, we volume render predicted RGB colors, depth, and normals, and optimize wrt. the input RGB images and monocular geometric cues. 
-            Further, we investigate different design choices for neural implicit architectures and provide an in-depth analysis. 
           </p>
         </div>
 
@@ -272,165 +269,13 @@
             We test our method on the ScanNet dataset and compare to state-of-the-art methods. Our approach achieves significantly better reconstruction results. 
           </p>
         </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/scannet.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
 
-        <h3 class="title is-4">Tanks and Temples</h3>
-        <div class="content has-text-justified">
-          <p>
-            We test our method on the Tanks and Temples dataset and compare to state-of-the-art methods. 
-            MonoSDF is the first neural implicit model achieving reasonable results on such a large-scale indoor scene.
-          </p>
-        </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/TNT.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <h3 class="title is-4">Tanks and Temples with High-resolution Monocular Cues</h3>
-        <div class="content has-text-justified">
-          <p>
-            We show a preliminary result of using high-resolution cues in the Tanks and Temples dataset.
-          </p>
-        </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="100%">
-            <source src="./resources/TNT_highres.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-
-        <h3 class="title is-4">DTU with <b>3 Input Views</b> </h3>
-        <div class="content has-text-justified">
-          <p>
-            We test our method on the DTU dataset with <strong>only 3 input views</strong>. Our monocular geometric cues significantly boost the reconstruction results. 
-          </p>
-        </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                  autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/DTU.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <h3 class="title is-4">DTU with <b>All Input Views</b> </h3>
-        <div class="content has-text-justified">
-          <p>
-            We test our method on the DTU dataset with <strong>all input views</strong>. Using multi-resolution feature grids with monocular geometric cues significantly boost the reconstruction results. 
-          </p>
-        </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                  autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/DTU_allview.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-
-        <h3 class="title is-4">Ablation on Replica</h3>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                  autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/ablation.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <h3 class="title is-4">Reconstructions</h3>
-        
-        <div class="embed-responsive embed-responsive-16by9">
-
-          <iframe style="clip-path: inset(1px 1px)" src="https://sketchfab.com/playlists/embed?autostart=1&amp;autospin=0.25&amp;collection=abee3cc1a7a7436c804f2bd3aadc2acd" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" mozallowfullscreen="true" webkitallowfullscreen="true" width="100%" height="100%" frameborder="0"></iframe>
-        </div>
-        
 
       </div>
     </div>
 
   </div>
 </section>
-
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{Yu2022MonoSDF,
-  author    = {Yu, Zehao and Peng, Songyou and Niemeyer, Michael and Sattler, Torsten and Geiger, Andreas},
-  title     = {MonoSDF: Exploring Monocular Geometric Cues for Neural Implicit Surface Reconstruction},
-  journal   = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2022},
-}</code></pre>
-  </div>
-</section>
-
-<section class="section" id="Acknowledgements">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Acknowledgements</h2>
-    This work was supported by an NVIDIA research gift. 
-    We thank the Max Planck ETH Center for Learning Systems (CLS) for supporting SP and the International Max Planck Research School for Intelligent Systems (IMPRS-IS) for supporting MN. 
-    ZY is supported by BMWi in the project KI Delta Learning (project number 19A19013O). 
-    AG is supported by the ERC Starting Grant LEGO-3D (850533) and DFG EXC number 2064/1 - project number 390727645.
-    TS is supported by the EU Horizon 2020 project RICAIP (grant agreeement No.857306), and the European Regional Development Fund under project IMPACT (No. CZ.02.1.01/0.0/0.0/15_003/0000468).
-    We also thank the authors of Manhattan-SDF for sharing baseline results on ScanNet. We also thank Christian
-    Reiser and Zijian Dong for proofreading.
-  </div>
-</section>
-
 
 <footer class="footer">
   <div class="container">
