@@ -66,19 +66,19 @@
             <span class="author-block">
               <a href="">Mirae Do</a><sup>1*</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-              <a href="">Yeon Jae Shin</a><sup>2</sup>
+              <a href="">Yeon Jae Shin</a><sup>1</sup>
             </span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-              <a href="">Jaeseok Yoo</a><sup>2</sup>
+              <a href="">Jaeseok Yoo</a><sup>1</sup>
             </span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-              <a href="">Jongkwang Hong</a><sup>2</sup>
+              <a href="">Jongkwang Hong</a><sup>1</sup>
             </span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-                <a href="">Joongrock Kim</a><sup>2</sup>
+                <a href="">Joongrock Kim</a><sup>1</sup>
               </span>&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="author-block">
-                <a href="">Chul Lee</a><sup>2</sup>
+                <a href="">Chul Lee</a><sup>1</sup>
               </span>&nbsp;&nbsp;&nbsp;&nbsp;
 
             </span>
@@ -238,14 +238,13 @@
     <!-- Method. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3" style="margin-top: -20px">Method</h2>
+        <h2 class="title is-3" style="margin-top: -20px">Method Overview</h2>
 
         <img src="./resources/method2.svg" class="center">
         <div class="content has-text-justified">
           <p style="margin-top: 30px">
-            We use monocular geometric cues predicted by a general-purpose pretrained network to guide the optimization of neural implicit surface models. 
-            More specifically, for a batch of rays, we volume render predicted RGB colors, depth, and normals, and optimize wrt. the input RGB images and monocular geometric cues. 
-            Further, we investigate different design choices for neural implicit architectures and provide an in-depth analysis. 
+            Our method consists of two phases: the first phase, holistic surface learning, concentrates on the global scene geometry, and the second phase, object surface learning, delves into the intricate geometrical and surface details of objects within the indoor scene. 
+            This dual-phase learning approach achieves a nuanced balance, carefully preserving the geometric integrity of room layouts while also capturing intricate surface details of specific objects.
           </p>
         </div>
 
@@ -418,7 +417,7 @@
   </div>
 </section>
 
-<section class="section" id="Acknowledgements">
+<!-- <section class="section" id="Acknowledgements">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
     This work was supported by an NVIDIA research gift. 
@@ -429,7 +428,7 @@
     We also thank the authors of Manhattan-SDF for sharing baseline results on ScanNet. We also thank Christian
     Reiser and Zijian Dong for proofreading.
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
