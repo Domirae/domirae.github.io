@@ -125,39 +125,16 @@
               </span>
               -->
               <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href=""
+              <span class="link-block">
+                <a href="https://github.com/Domirae/H2O-SDF"
                    class="external-link button is-normal is-rounded is-dark disabled">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                   </a>
-              </span> -->
-
-              <!-- Code Link.
-              <span class="link-block">
-                <a href="https://github.com/autonomousvision/sdfstudio"
-                   class="external-link button is-normal is-rounded is-dark disabled">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>SDFStudio</span>
-                  </a>
-              </span> -->
-
-              <!-- Dataset Link. -->
-              <!--
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
               </span>
-              -->
+
             </div>
 
           </div>
@@ -168,28 +145,6 @@
 </section>
 
 
-
-<!--
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Reconstructions</h2>
-
-        <div class="embed-responsive embed-responsive-16by9">
-
-          <iframe style="clip-path: inset(1px 1px)" src="https://sketchfab.com/playlists/embed?collection=abee3cc1a7a7436c804f2bd3aadc2acd" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" mozallowfullscreen="true" webkitallowfullscreen="true" width="100%" height="100%" frameborder="0"></iframe>
-        </div>
-        
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
--->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -221,20 +176,7 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-    <!-- Paper video. -->
-    <!--
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    -->
-    <!--/ Paper video. -->
+
   </div>
 </section>
 
@@ -249,7 +191,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3" style="margin-top: -20px">Method Overview</h2>
 
-        <img src="./resources/method2.svg" class="center">
+        <img src="./resources/overview.jpg" class="center">
         <div class="content has-text-justified">
           <p style="margin-top: 30px">
             Our method consists of two phases: the first phase, holistic surface learning, concentrates on the global scene geometry, and the second phase, object surface learning, delves into the intricate geometrical and surface details of objects within the indoor scene. 
@@ -277,8 +219,9 @@
         <h3 class="title is-4">ScanNet</h3>
         <div class="content has-text-justified">
           <p>
-            We test our method on the ScanNet dataset and compare to state-of-the-art methods. Our approach achieves significantly better reconstruction results. 
-          </p>
+            We test our method on the ScanNet dataset and compare to state-of-the-art methods. 
+            Our method demonstrates significantly smoother reconstruction results in low-frequency areas compared to other methods, highlighting the benefits of our re-weighting scheme.
+            Moreover, thanks to the object surface learning, H2O-SDF can better represent the fine-grained surface details of object geometries (e.g., chair legs or lamp) compared to other methods.
         </div>
         
         <div class="content has-text-centered">
@@ -294,117 +237,6 @@
                     type="video/mp4">
           </video>
         </div>
-
-        <h3 class="title is-4">Tanks and Temples</h3>
-        <div class="content has-text-justified">
-          <p>
-            We test our method on the Tanks and Temples dataset and compare to state-of-the-art methods. 
-            MonoSDF is the first neural implicit model achieving reasonable results on such a large-scale indoor scene.
-          </p>
-        </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/TNT.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <h3 class="title is-4">Tanks and Temples with High-resolution Monocular Cues</h3>
-        <div class="content has-text-justified">
-          <p>
-            We show a preliminary result of using high-resolution cues in the Tanks and Temples dataset.
-          </p>
-        </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="100%">
-            <source src="./resources/TNT_highres.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-
-        <h3 class="title is-4">DTU with <b>3 Input Views</b> </h3>
-        <div class="content has-text-justified">
-          <p>
-            We test our method on the DTU dataset with <strong>only 3 input views</strong>. Our monocular geometric cues significantly boost the reconstruction results. 
-          </p>
-        </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                  autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/DTU.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <h3 class="title is-4">DTU with <b>All Input Views</b> </h3>
-        <div class="content has-text-justified">
-          <p>
-            We test our method on the DTU dataset with <strong>all input views</strong>. Using multi-resolution feature grids with monocular geometric cues significantly boost the reconstruction results. 
-          </p>
-        </div>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                  autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/DTU_allview.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-
-        <h3 class="title is-4">Ablation on Replica</h3>
-        
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                  autoplay
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 loop
-                 width="90%">
-            <source src="./resources/ablation.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-        <h3 class="title is-4">Reconstructions</h3>
-        
-        <div class="embed-responsive embed-responsive-16by9">
-
-          <iframe style="clip-path: inset(1px 1px)" src="https://sketchfab.com/playlists/embed?autostart=1&amp;autospin=0.25&amp;collection=abee3cc1a7a7436c804f2bd3aadc2acd" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" mozallowfullscreen="true" webkitallowfullscreen="true" width="100%" height="100%" frameborder="0"></iframe>
-        </div>
-        
 
       </div>
     </div>
@@ -425,7 +257,7 @@
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
-}</code></pre>
+</code></pre>
   </div>
 </section>
 
